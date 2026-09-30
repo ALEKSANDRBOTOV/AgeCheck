@@ -8,14 +8,15 @@ def winner(player, computer):
         return "ничья"
     if player == "камень" and computer == "ножницы":
         return "ты"
-    ...
+    if player == "ножницы" and computer == "бумага":
+        return "ты"
     if player == "бумага" and computer == "камень":
         return "ты"
     return "компьютер"
 
 
 print("Твой ход: камень, ножницы или бумага?")
-player = ...
+player = input()
 computer = random.choice(["камень", "ножницы", "бумага"])
 result = winner(player, computer)
 
