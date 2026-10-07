@@ -23,11 +23,8 @@ result = winner(player, computer)
 if result == "ошибка":
     print("Такого хода нет.")
 elif result == "ничья":
-    print(f"Компьютер выбрал: {computer}")
-    print("Ничья!")
+    print(f"Компьютер выбрал: {computer}. Ничья")
 elif result == "ты":
-    print(f"Компьютер выбрал: {computer}")
-    print("Победа за тобой!")
+    print(f"Компьютер выбрал: {computer}. Победа за тобой!")
 else:
-    print(f"Компьютер выбрал: {computer}")
-    print("Победил компьютер.")
+    print(f"Компьютер выбрал: {computer}. Победил компьютер.")
